@@ -4,7 +4,7 @@
 >
 > Người viết: Trái Ôỉ
 >
-> Lần cuối chỉnh sửa: 13/04/2017
+> Lần cuối chỉnh sửa: 14/04/2017
 
 ## Nội dung
 
@@ -25,24 +25,30 @@
 <a name="chapter-1"></a>
 ### I. Cài OS/Tool cho công việc
 
+- [x] Cài OS.
+- [x] Cài keepass.
+- [x] Cài máy ảo: Virtualbox.
+
 <a name="chapter-2"></a>
 ### II. Cài Centos/RAID/LVM
 
-1. [ ] Cài 1 máy ảo linux.
-2. [ ] Chia partition:
+1. [x] Cài 1 máy ảo linux.
+2. [x] Chia partition:
 
 	| Partition | Filesystem | Size |
 	| --- | --- | --- |
 	| /boot/ | ext2 | 500MB |
 	| / | ext4 | Còn lại |
-3. Add thêm 2 ổ cứng
-	- [ ] Cấu hình raid 1 cho 2 ổ cứng bằng command line.
-	- [ ] Mount partition lên /data.
-	- [ ] Đảm bảo auto mount partition sau khi reboot.
-4. Add thêm 3 ổ cứng 
-	- [ ] Cấu hình LVM trên 3 ổ cứng vừa add.
-	- [ ] Tạo thêm 2 logical volume và mount thành /data2 và /data3
-	- [ ] Đảm bảo auto mount partitiontion sau khi reboot.
+3. Cấu hình RAID 1.
+	- [x] Add thêm 2 ổ cứng
+	- [x] Cấu hình RAID 1 cho 2 ổ cứng bằng command line.
+	- [x] Mount partition lên `/data`.
+	- [x] Đảm bảo auto mount partition sau khi reboot.
+4. Cấu hình LVM.
+	- [x] Add thêm 3 ổ cứng 
+	- [x] Cấu hình LVM trên 3 ổ cứng vừa add.
+	- [x] Tạo thêm 2 logical volume và mount thành `/data2` và `/data3`
+	- [x] Đảm bảo auto mount partition sau khi reboot.
 
 >**Lưu ý**: 
 > + Dung lượng ổ cứng có thể chọn tùy thích
