@@ -32,19 +32,19 @@
 <a name="chapter-2"></a>
 ### II. Cài Centos/RAID/LVM
 
-1. [x] Cài 1 máy ảo linux.
-2. [x] Chia partition:
+1. [x] [Cài 1 máy ảo linux](./Chapter-2#buoc-1).
+2. [x] [Chia partition](./Chapter-2#buoc-2):
 
 	| Partition | Filesystem | Size |
 	| --- | --- | --- |
 	| /boot/ | ext2 | 500MB |
 	| / | ext4 | Còn lại |
-3. Cấu hình RAID 1.
+3. [Cấu hình RAID 1](./Chapter-2#buoc-3).
 	- [x] Add thêm 2 ổ cứng
 	- [x] Cấu hình RAID 1 cho 2 ổ cứng bằng command line.
 	- [x] Mount partition lên `/data`.
 	- [x] Đảm bảo auto mount partition sau khi reboot.
-4. Cấu hình LVM.
+4. [Cấu hình LVM](./Chapter-2#buoc-4).
 	- [x] Add thêm 3 ổ cứng 
 	- [x] Cấu hình LVM trên 3 ổ cứng vừa add.
 	- [x] Tạo thêm 2 logical volume và mount thành `/data2` và `/data3`
