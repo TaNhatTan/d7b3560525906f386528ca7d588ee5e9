@@ -58,14 +58,14 @@
 <a name="chapter-3"></a>
 ### III. Cách kiểm tra các phần cứng server
 
-- [x] [1. Kiểm tra một số thông tin của OS](Chapter-3#chapter-1)**
-- [x] [2. Kiểm tra CPU](Chapter-3#chapter-2)**
-- [x] [3. Kiểm tra các thiết bị PCI](Chapter-3#chapter-3)**
-- [x] [4. Kiểm tra bộ nhớ lưu trữ](Chapter-3#chapter-4)**
-- [x] [5. Kiểm tra thông tin trên đĩa](Chapter-3#chapter-5)**
-- [x] [6. Kiểm tra thông tin card mạng](Chapter-3#chapter-6)**
-- [x] [7. Kiểm tra thông tin BIOS](Chapter-3#chapter-7)**
-- [x] [8. Kiểm tra thông tin Mainboard](Chapter-3#chapter-8)**
+- [x] [1. Kiểm tra một số thông tin của OS](Chapter-3#chapter-1)
+- [x] [2. Kiểm tra CPU](Chapter-3#chapter-2)
+- [x] [3. Kiểm tra các thiết bị PCI](Chapter-3#chapter-3)
+- [x] [4. Kiểm tra bộ nhớ lưu trữ](Chapter-3#chapter-4)
+- [x] [5. Kiểm tra thông tin trên đĩa](Chapter-3#chapter-5)
+- [x] [6. Kiểm tra thông tin card mạng](Chapter-3#chapter-6)
+- [x] [7. Kiểm tra thông tin BIOS](Chapter-3#chapter-7)
+- [x] [8. Kiểm tra thông tin Mainboard](Chapter-3#chapter-8)
 
 <a name="chapter-4"></a>
 ### IV. Linux Filesystem
