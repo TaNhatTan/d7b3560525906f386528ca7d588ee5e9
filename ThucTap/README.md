@@ -87,7 +87,11 @@
 - [x] [sticky bit](Chapter-5#chapter-4)
 
 <a name="chapter-6"></a>
-### VI. Files, directories permission
+### [VI. Files, directories permission](Chapter-6)
+
+- [x] [Phân quyền trong Linux](Chapter-6#chapter-1)
+- [x] [Biểu diễn phân quyền](Chapter-6#chapter-2)
+- [x] [Thay đổi quyền](Chapter-6#chapter-3)
 
 <a name="chapter-7"></a>
 ### VII. Các khái niệm domain, hosting, dns
