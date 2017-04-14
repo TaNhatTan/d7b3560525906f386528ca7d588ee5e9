@@ -87,7 +87,7 @@
 - [x] [sticky bit](Chapter-5#chapter-4)
 
 <a name="chapter-6"></a>
-### [VI. Files, directories permission](Chapter-6)
+### VI. Files, directories permission
 
 - [x] [Phân quyền trong Linux](Chapter-6#chapter-1)
 - [x] [Biểu diễn phân quyền](Chapter-6#chapter-2)
