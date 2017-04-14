@@ -79,7 +79,12 @@
 - [x] [Thông tin về account](Chapter-4#chapter-7)
 
 <a name="chapter-5"></a>
-### V. Umask, suid, guid, sticky bit
+### V. Umask, SUID, SGID, sticky bit
+
+- [x] [umask](Chapter-5#chapter-1)
+- [x] [SUID](Chapter-5#chapter-2)
+- [x] [SGID](Chapter-5#chapter-3)
+- [x] [sticky bit](Chapter-5#chapter-4)
 
 <a name="chapter-6"></a>
 ### VI. Files, directories permission
