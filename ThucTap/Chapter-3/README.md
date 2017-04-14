@@ -1,4 +1,4 @@
-# Cách kiểm tra các phần cứng server
+# III. Cách kiểm tra các phần cứng server
 
 * **[1. Kiểm tra một số thông tin của OS](#chapter-1)**
 * **[2. Kiểm tra CPU](#chapter-2)**

@@ -58,22 +58,25 @@
 <a name="chapter-3"></a>
 ### III. Cách kiểm tra các phần cứng server
 
-- [x] [1. Kiểm tra một số thông tin của OS](Chapter-3#chapter-1)
-- [x] [2. Kiểm tra CPU](Chapter-3#chapter-2)
-- [x] [3. Kiểm tra các thiết bị PCI](Chapter-3#chapter-3)
-- [x] [4. Kiểm tra bộ nhớ lưu trữ](Chapter-3#chapter-4)
-- [x] [5. Kiểm tra thông tin trên đĩa](Chapter-3#chapter-5)
-- [x] [6. Kiểm tra thông tin card mạng](Chapter-3#chapter-6)
-- [x] [7. Kiểm tra thông tin BIOS](Chapter-3#chapter-7)
-- [x] [8. Kiểm tra thông tin Mainboard](Chapter-3#chapter-8)
+- [x] [Kiểm tra một số thông tin của OS](Chapter-3#chapter-1)
+- [x] [Kiểm tra CPU](Chapter-3#chapter-2)
+- [x] [Kiểm tra các thiết bị PCI](Chapter-3#chapter-3)
+- [x] [Kiểm tra bộ nhớ lưu trữ](Chapter-3#chapter-4)
+- [x] [Kiểm tra thông tin trên đĩa](Chapter-3#chapter-5)
+- [x] [Kiểm tra thông tin card mạng](Chapter-3#chapter-6)
+- [x] [Kiểm tra thông tin BIOS](Chapter-3#chapter-7)
+- [x] [Kiểm tra thông tin Mainboard](Chapter-3#chapter-8)
 
 <a name="chapter-4"></a>
 ### IV. Linux Filesystem
 
-- [ ] /etc/profile
-- [ ] /etc/bashrc
-- [ ] /boot/
-- [ ] /tmp/
+- [x] [/etc/profile](Chapter-4#chapter-1)
+- [x] [/etc/bashrc](Chapter-4#chapter-2)
+- [x] [/boot/](Chapter-4#chapter-3)
+- [x] [/tmp](Chapter-4#chapter-4)
+- [x] [/var/log/](Chapter-4#chapter-5)
+- [x] [/etc/filesystems](Chapter-4#chapter-6)
+- [x] [Thông tin về account](Chapter-4#chapter-7)
 
 <a name="chapter-5"></a>
 ### V. Umask, suid, guid, sticky bit
