@@ -11,9 +11,9 @@
 - Nhiệm vụ của init là start và stop các process, services, .. 
 - Do init là tiến trình đầu tiên trên hệ thống nên PID=1.
 - Có 3 kiểu Init system chính trong hệ thống Linux:
- - **SystemV**: phiên bản truyền thống của init system.
- - **Upstart**: sử dụng trong các phiên bản Ubuntu < 15.04.
- - **Systemd**: sử dụng trên nhiều distro Linux hiện nay, dần thay thế init system mặc định.
+  - **SystemV**: phiên bản truyền thống của init system.
+  - **Upstart**: sử dụng trong các phiên bản Ubuntu < 15.04.
+  - **Systemd**: sử dụng trên nhiều distro Linux hiện nay, dần thay thế init system mặc định.
 
 <a name="chapter-2"></a>
 ### 2. SystemD
