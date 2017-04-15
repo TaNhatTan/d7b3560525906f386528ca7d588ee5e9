@@ -95,11 +95,16 @@
 
 <a name="chapter-7"></a>
 ### VII. Các khái niệm domain, hosting, dns
-Các loại records: PTR, A, Alias, MX,...
+
+- [x] [Domain](Chapter-7#chapter-1)
+- [x] [Hosting](Chapter-7#chapter-2)
 
 <a name="chapter-8"></a>
 ### VIII. Tìm hiểu SystemD, Init
-So sánh 2 loại
+
+- [x] [init System](Chapter-8#chapter-1)
+- [x] [SystemD](Chapter-8#chapter-2)
+- [x] [So sánh Init và SystemD](#Chapter-8#chapter-3)
 
 <a name="chapter-9"></a>
 ### IX. Bash shell
