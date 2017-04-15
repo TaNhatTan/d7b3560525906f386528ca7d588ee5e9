@@ -30,16 +30,16 @@
 #### a. Service Related Commands
 | SysV Init | SystemD | Notes |
 | --- | --- | --- |
-| service <service> start | systemctl start <service>.service | Start <service> |
-| service <service> stop | systemctl stop <service>.service | Stop <service> |
-| service <service> restart | systemctl restart <service>.service | Restart <service> |
-| service <service> reload | systemctl reload <service>.service | Reload <service> |
-| service <service> status | systemctl status <service>.service | <service> status |
-| service <service> condrestart | systemctl condrestart <service>.service | Restart khi <service> đang chạy |
-| chkconfig <service> on | systemctl enable <systemctl>.service | Enable <service> khi boot |
-| chkconfig <service> off | systemctl disable <systemctl>.service | Disable <service> khi boot |
-| chkconfig <service> | systemctl is-enabled <systemctl>.service | Kiểm tra nếy <service> đang ở startup |
-| chkconfig <service> --add | systemctl daemon-reload | Tạo thêm <service> |
+| service &lt;service&gt; start | systemctl start &lt;service&gt;.service | Start &lt;service&gt; |
+| service &lt;service&gt; stop | systemctl stop &lt;service&gt;.service | Stop &lt;service&gt; |
+| service &lt;service&gt; restart | systemctl restart &lt;service&gt;.service | Restart &lt;service&gt; |
+| service &lt;service&gt; reload | systemctl reload &lt;service&gt;.service | Reload &lt;service&gt; |
+| service &lt;service&gt; status | systemctl status &lt;service&gt;.service | &lt;service&gt; status |
+| service &lt;service&gt; condrestart | systemctl condrestart &lt;service&gt;.service | Restart khi &lt;service&gt; đang chạy |
+| chkconfig &lt;service&gt; on | systemctl enable <systemctl>.service | Enable &lt;service&gt; khi boot |
+| chkconfig &lt;service&gt; off | systemctl disable <systemctl>.service | Disable &lt;service&gt; khi boot |
+| chkconfig &lt;service&gt; | systemctl is-enabled <systemctl>.service | Kiểm tra nếy &lt;service&gt; đang ở startup |
+| chkconfig &lt;service&gt; --add | systemctl daemon-reload | Tạo thêm &lt;service&gt; |
 
 #### b. Runlevels
 
@@ -73,9 +73,9 @@
 
 | SystemD | Notes |
 | --- | --- |
-| systemctl.<service> start -H user@host | Execute a systemd command on remote host |
+| systemctl.&lt;service&gt; start -H user@host | Execute a systemd command on remote host |
 | systemd.analyze, systemd.analyze time | Check boot time |
-| systemctl kill <service> | Kill all processes related to <service> |
+| systemctl kill &lt;service&gt; | Kill all processes related to &lt;service&gt; |
 | journalctf --since=today | Get logs for events for today |
 | hostnamectl | Hostname and other host related infomation |
 | timedatectl | Date and time of system with timezone and other information |

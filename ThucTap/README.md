@@ -104,7 +104,7 @@
 
 - [x] [init System](Chapter-8#chapter-1)
 - [x] [SystemD](Chapter-8#chapter-2)
-- [x] [So sánh Init và SystemD](#Chapter-8#chapter-3)
+- [x] [So sánh Init và SystemD](Chapter-8#chapter-3)
 
 <a name="chapter-9"></a>
 ### IX. Bash shell
