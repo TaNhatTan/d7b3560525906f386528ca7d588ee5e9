@@ -1,0 +1,10 @@
+======16-04-2017_03:4022s=====
+[-] 'var/lib/vz/images/111/disk1.ra: No such file or directory. Backup failed!'
+[+] Backup success: var/lib/vz/images/111/disk2.raw
+[+] Backup success: var/lib/vz/images/111/disk3.raw
+======16-04-2017_03:4032s=====
+[+] Backup success: var/lib/vz/images/111/disk1.raw
+[+] Delete 'disk2.raw' success!
+[+] Backup success: var/lib/vz/images/111/disk2.raw
+[+] Delete 'disk3.raw' success!
+[+] Backup success: var/lib/vz/images/111/disk3.raw

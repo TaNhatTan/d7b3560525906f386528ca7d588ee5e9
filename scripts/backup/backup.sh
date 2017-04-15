@@ -26,7 +26,7 @@ if [ ! -f "backup.tar.gz" ]; then
 		echo "[-] Backup failed!" | tee -a $LOG;
 		exit;
 	fi
-else
+elsesub	
 	tar -tvf "backup.tar.gz" | sed -r 's/\s+/ /g' | cut -d ' ' -f 3,6 | sed -r 's/([0-9]+)(\s+)(.+)/\3\2\1/g' > $TMP1;
 	if tar -czf "backup1.tar.gz" $@ 2>>$LOG; then
 		tar -tvf "backup1.tar.gz" | sed -r 's/\s+/ /g' | cut -d ' ' -f 3,6 | sed -r 's/([0-9]+)(\s+)(.+)/\3\2\1/g' > $TMP2;
