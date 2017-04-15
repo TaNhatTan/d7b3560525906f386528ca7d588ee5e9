@@ -1,4 +1,4 @@
-======15-04-2017_21:22:59========
+======15-04-2017_22:32:34========
 [+] Create new 'backup.tar.gz'
 [+] User 'traioi' has backup 5 files.
 ---
@@ -9,36 +9,30 @@ bak/file4 0 bytes
 bak/file5 0 bytes
 ---
 [+] Backup successful!
-======15-04-2017_21:23:32========
+======15-04-2017_22:32:46========
 [+] User 'traioi' is using backup.
 ---
-[+] Remove file bak/file4.
-[+] Remove file bak/file5.
-[+] Add file bak/ame1.
-[+] Add file bak/ame2.
-[+] Add file bak/ame3.
-[+] Add file bak/ame4.
+[+] Add file bak/name2:5 bytes.
 ---
 [+] Changing successful.
-======15-04-2017_21:24:28========
+======15-04-2017_22:33:39========
 [+] User 'traioi' is using backup.
 ---
-[+] Remove file bak/name1.
-[+] Remove file bak/name2.
-[+] Remove file bak/name3.
-[+] Remove file bak/name4.
+[+] Remove file bak/file1:0 bytes.
+[+] Remove file bak/file2:0 bytes.
+[+] Remove file bak/file3:0 bytes.
+[+] Remove file bak/file4:0 bytes.
+[+] Remove file bak/file5:0 bytes.
+[+] Add file bak/name1:0 bytes.
+[+] Add file bak/name3:0 bytes.
+[+] Add file bak/name4:0 bytes.
+[+] Add file bak/name5:0 bytes.
 ---
 [+] Changing successful.
-======15-04-2017_21:24:55========
+======15-04-2017_22:34:34========
 [+] User 'traioi' is using backup.
 ---
-[+] Add file bak/name1.
-[+] Add file bak/name2.
-[+] Add file bak/name3.
-[+] Add file bak/name4.
+[+] Remove file bak/name1:0 bytes.
+[+] Add file bak/name1:7 bytes.
 ---
 [+] Changing successful.
-======15-04-2017_21:25:06========
-tar: bak/name5: Cannot stat: No such file or directory
-tar: Exiting with failure status due to previous errors
-[-] Backup failed!

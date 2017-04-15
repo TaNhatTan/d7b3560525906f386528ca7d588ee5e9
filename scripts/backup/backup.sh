@@ -24,12 +24,12 @@ if [ ! -f "backup.tar.gz" ]; then
 		echo "[+] Backup successful!" | tee -a $LOG;
 	else
 		echo "[-] Backup failed!" | tee -a $LOG;
-
+		exit;
 	fi
 else
-	tar -tf "backup.tar.gz" > $TMP1;
+	tar -tvf "backup.tar.gz" | sed -r 's/\s+/ /g' | cut -d ' ' -f 3,6 | sed -r 's/([0-9]+)(\s+)(.+)/\3\2\1/g' > $TMP1;
 	if tar -czf "backup1.tar.gz" $@ 2>>$LOG; then
-		tar -tf "backup1.tar.gz" > $TMP2;
+		tar -tvf "backup1.tar.gz" | sed -r 's/\s+/ /g' | cut -d ' ' -f 3,6 | sed -r 's/([0-9]+)(\s+)(.+)/\3\2\1/g' > $TMP2;
 		diff ".tmp1" ".tmp2" > ".diff";
 		echo "[+] User '$(whoami)' is using backup." | tee -a $LOG;
 		echo "---" >> $LOG;
@@ -37,17 +37,17 @@ else
 			echo "---" >> $LOG;
 			echo "[+] Everything is up today." | tee -a $LOG;
 		else
-			MATCH1=$(cat .diff | grep -Ei "[<>=].+" | cut -d " " -f 1);
-			MATCH2=$(cat .diff | grep -Ei "[<>=].+" | cut -d " " -f 2);
+			MATCH1=$(cat .diff | grep -Ei "[<>=].+" | cut -d ' ' -f 1);
+			MATCH2=$(cat .diff | grep -Ei "[<>=].+" | cut -d ' ' -f 2,3 | sed -r 's/(.+) (.+)/\1\: \2/g');
 			CHANGE1=(${MATCH1// /});
 			CHANGE2=(${MATCH2// /});
 			LENGTH=${#CHANGE1[@]};
 			for i in $(seq 0 $(($LENGTH-1)))
 			do
 				if [ ${CHANGE1[$i]} = ">" ]; then
-					echo "[+] Add file ${CHANGE2[$i]}." >> $LOG;
+					echo "[+] Add file ${CHANGE2[$i]} bytes." >> $LOG;
 				elif [ ${CHANGE1[$i]} = "<" ]; then
-					echo "[+] Remove file ${CHANGE2[$i]}." >> $LOG;
+					echo "[+] Remove file ${CHANGE2[$i]} bytes." >> $LOG;
 				else
 					echo "[+] Everything is up today." | tee -a $LOG;
 				fi
@@ -62,6 +62,7 @@ else
 		rm -rf ".tmp1";
 		rm -rf "backup1.tar.gz";
 		echo "[-] Backup failed!" | tee -a $LOG;
+		exit;
 
 	fi
 fi
