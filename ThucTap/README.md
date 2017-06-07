@@ -8,6 +8,7 @@
 
 ## Nội dung
 
+
 * **[I. Cài OS/Tool cho công việc](#chapter-1)**
 * **[II. Cài Centos/RAID/LVM](#chapter-2)**
 * **[III. Cách kiểm tra các phần cứng server](#chapter-3)**
@@ -109,21 +110,24 @@
 <a name="chapter-9"></a>
 ### IX. Bash shell
 
-- [ ] Get public ip
-- [ ] random pass
-- [ ] alias
-- [ ] awk
-- [ ] sed
-- [ ] cut
-- [ ] cat
+- [x] Get public ip
+- [x] random pass
+- [x] alias
+- [x] awk
+- [x] sed
+- [x] cut
+- [x] cat
 - [ ] Viết script backup dữ liệu trong /home/$USER ra ổ cứng di động: backup incremental rotate 7 ngày, có backup, đặt cron, đặt cron, có exclude thư mục.
 
 <a name="chapter-10"></a>
-### X. Cài đặt các dich vụ
-- [ ] Build reverse proxy from source
-- [ ] Nginx, Apache, PHP, MYSQL: compile from source
-- [ ] PHP Handler
-- [ ] Deploy Wordpress on reverse proxy
+### X. Cài đặt mô hình Reverse Proxy
+- [ ] Cài đặt dịch vụ Nginx, Httpd, PHP, MySQL
+- [ ] Cấu hình Reverse Proxy với:
+  - Nginx làm frontend xử lý static.
+	- Httpd làm backend xử lý PHP
+- [ ] Cấu hình vhost với 2 domain:
+  - abc.com chạy Wordpress.
+	- test.com chạy Magento.
 
 <a name="chapter-11"></a>
 ### XI. VestaCP
@@ -147,3 +151,4 @@
 ### XIII. Final
 
 - [ ] Build hệ thống hoàn chỉnh: haproxy, reverse proxy, firewall limit ports
+
