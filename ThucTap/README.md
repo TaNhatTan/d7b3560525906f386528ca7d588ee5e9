@@ -124,10 +124,10 @@
 - [ ] Cài đặt dịch vụ Nginx, Httpd, PHP, MySQL
 - [ ] Cấu hình Reverse Proxy với:
   - Nginx làm frontend xử lý static.
-	- Httpd làm backend xử lý PHP
+  - Httpd làm backend xử lý PHP
 - [ ] Cấu hình vhost với 2 domain:
   - abc.com chạy Wordpress.
-	- test.com chạy Magento.
+  - test.com chạy Magento.
 
 <a name="chapter-11"></a>
 ### XI. VestaCP
