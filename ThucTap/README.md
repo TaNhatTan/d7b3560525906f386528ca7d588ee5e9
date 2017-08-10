@@ -16,11 +16,11 @@
 * **[V. Umask, suid, guid, sticky bit](#chapter-5)**
 * **[VI. Files, directories permission](#chapter-6)**
 * **[VII. Các khái niệm domain, hosting, dns](#chapter-7)**  
-* **[VIII. Tìm hiểu SystemD, Init](#chapter-8)** 
+* **[VIII. Tìm hiểu SystemD, Init](#chapter-8)**
 * **[IX. Bash shell](#chapter-9)**
-* **[X. Cài đặt các dich vụ](#chapter-10)**
-* **[XI. VestaCP](#chapter-11)**
-* **[XII. Iptables, firewalld, CSF](#chapter-12)**
+* **[X. Cài đặt mô hình Reverse Proxy](#chapter-10)**
+* **[XI. Tìm hiểu mô hình Reverse Proxy nâng cao](#chapter-11)**
+* **[XII. Mô hình reverse proxy - bảo mật cơ bản](#chapter-12)**
 * **[XIII. Final](#chapter-13)**
 
 <a name="chapter-1"></a>
@@ -46,12 +46,12 @@
 	- [x] Mount partition lên `/data`.
 	- [x] Đảm bảo auto mount partition sau khi reboot.
 4. [Cấu hình LVM](./Chapter-2#buoc-4).
-	- [x] Add thêm 3 ổ cứng 
+	- [x] Add thêm 3 ổ cứng
 	- [x] Cấu hình LVM trên 3 ổ cứng vừa add.
 	- [x] Tạo thêm 2 logical volume và mount thành `/data2` và `/data3`
 	- [x] Đảm bảo auto mount partition sau khi reboot.
 
->**Lưu ý**: 
+>**Lưu ý**:
 > + Dung lượng ổ cứng có thể chọn tùy thích
 > + Lưu lại các command sau khi thao tác và nộp lại.
 > + Bật ssh cho các máy ảo này ssh vào kiểm tra cấu hình sau khi hoàn tất.
@@ -121,13 +121,32 @@
 
 <a name="chapter-10"></a>
 ### X. Cài đặt mô hình Reverse Proxy
-- [ ] Cài đặt dịch vụ Nginx, Httpd, PHP, MySQL
-- [ ] Cấu hình Reverse Proxy với:
-  - Nginx làm frontend xử lý static.
-  - Httpd làm backend xử lý PHP
-- [ ] Cấu hình vhost với 2 domain:
-  - abc.com chạy Wordpress.
-  - test.com chạy Magento.
+- [x] [Cài đặt dịch vụ Nginx](Chapter-10/README.md#chapter-1)
+- [x] [Cài đặt dịch vụ Httpd](Chapter-10/README2.md#chapter-2)
+- [x] [Cài đặt PHP](Chapter-10/README3.md#chapter-3)
+- [x] [Cài đặt dịch vụ MySQL](Chapter-10/README4.md#chapter-4)
+- [x] [Cấu hình Reverse Proxy](Chapter-10/README5.md#chapter-5)
+- [x] [Cấu hình vhost cho domain abc.com và test.com.](Chapter-10/README6.md#chapter-6)
+
+<a name="chapter-11"></a>
+### XI. Tìm hiểu mô hình Reverse Proxy nâng cao
+- [ ] Cài thêm memcached:
+  - Kết nối 2 website abc.com và test.com với memcached.
+- [ ] Cài SSL cho 2 domain abc.com và test.com
+  - Sử dụng Self-Signed SSL Certificate.
+- [ ] Cấu hình NGINX và Apache ghi log ở level error, access, rotate daily.
+- [ ] Cài đặt phpMyAdmin.
+- [ ] Cài đặt vsftpd, tạo tài khoản ftp cho 2 site abc.com và test.com
+
+<a name="chapter-12"></a>
+### XII. Mô hình reverse proxy - bảo mật cơ bản
+- Cài đặt thêm 2 module cho nginx:
+  - [ ] testcookie.
+  - [ ] pagespeed.
+- [ ]  Bật chức năng chứng thực bằng user và password khi đăng nhập vào trang admin của 2 website abc.com và test.com
+- [ ] Cấu hình chỉ cho phép truy cập vào trang admin từ các IP cố định.
+  - Chỉ chấp nhận truy cập từ IP 192.168.0.100 đến 192.168.0.200.
+- [ ] Cấu hình chỉ cho phép truy cập dịch vụ nginx và ssh từ bên ngoài, các dịch vụ khác chỉ truy cập được từ chính localhost.
 
 <a name="chapter-11"></a>
 ### XI. VestaCP
@@ -151,4 +170,3 @@
 ### XIII. Final
 
 - [ ] Build hệ thống hoàn chỉnh: haproxy, reverse proxy, firewall limit ports
-
