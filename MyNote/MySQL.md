@@ -1,3 +1,10 @@
+## MySQL
+
+* **[I. Simple command](#I)**
+* **[II. Advanced command](#II)**
+* **[III. Check info](#III)**
+
+<a name="I"></a>
 #### I. SIMPLE COMMAND:
 ##### 1. Show index from table:
 ```
@@ -19,6 +26,7 @@
   CREATE DATABASE mydatabase CHARACTER SET utf8 COLLATE utf8_general_ci;
 ```
 
+<a name="II"></a>
 #### II. ADVANCED COMMAND
 ##### 1. Allow Remote access:
 ```
@@ -35,6 +43,7 @@ mysql> update user set password=PASSWORD("pass") where User='root';
 mysql> flush privileges;
 ```
 
+<a name="III"></a>
 #### III. CHECK INFO
 ##### 1 Show size of database:
 ```

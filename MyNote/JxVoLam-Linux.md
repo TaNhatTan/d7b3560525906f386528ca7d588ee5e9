@@ -1,3 +1,10 @@
+## JxVoLam for Linux
+
+* **[I. Setup Game Server](#I)**
+* **[II. Khách hàng thao tác](#II)**
+* **[III. Kỹ thuật thao tác](#III)**
+
+<a name="I"></a>
 #### I. SETUP GAME SERVER
 ##### 1. Setup lib:
 ```
@@ -10,6 +17,7 @@ yum install mysql-server
 ```
 ***Pass default: Abcd6789***
 
+<a name="II"></a>
 #### II. KHÁCH HÀNG THAO TÁC:  
 - Phân quyền cho các file sau có quyền execute:
 ```
@@ -22,6 +30,7 @@ chmod +x gateway/goddess_y gateway/bishop_y gateway/s3relay/s3relay_y server1/jx
 - Sửa InternetIp  của file `server1/servercfg.ini` về IP proxy
 - Khách hàng bảo trì tất cả server, restart + reboot vps windb
 
+<a name="III"></a>
 #### III. KỸ THUẬT THAO TÁC
 - Mở port game trên proxy.
 - Setup IP Proxy trên GameServer.
